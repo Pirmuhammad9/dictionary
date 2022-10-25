@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.dictionaryxp.presentation.ui.screen.SplashScreen"
+        android:label="SplashScreen" >
+        <action
+            android:id="@+id/action_splashScreen_to_dictionaryScreen"
+            app:destination="@id/dictionaryScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dictionaryScreen"
+        android:name="uz.gita.dictionaryxp.presentation.ui.screen.DictionaryScreen"
+        android:label="DictionaryScreen" >
+        <action
+            android:id="@+id/action_dictionaryScreen_to_favouriteScreen"
+            app:destination="@id/favouriteScreen" />
+        <action
+            android:id="@+id/action_dictionaryScreen_to_exerciseScreen"
+            app:destination="@id/exerciseScreen" />
+        <action
+            android:id="@+id/action_dictionaryScreen_to_wordScreen"
+            app:destination="@id/wordScreen" />
+        <action
+            android:id="@+id/action_dictionaryScreen_to_notesScreen"
+            app:destination="@id/notesScreen" />
+        <action
+            android:id="@+id/action_dictionaryScreen_to_aboutScreen"
+            app:destination="@id/aboutScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteScreen"
+        android:name="uz.gita.dictionaryxp.presentation.ui.screen.FavouriteScreen"
+        android:label="FavouriteScreen" >
+        <action
+            android:id="@+id/action_favouriteScreen_to_wordScreen"
+            app:destination="@id/wordScreen"
+            app:popUpTo="@id/dictionaryScreen"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="isEnglish"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseScreen"
+        android:name="uz.gita.dictionaryxp.presentation.ui.screen.ExerciseScreen"
+        android:label="screen_exercise"
+        tools:layout="@layout/screen_exercise" />
+    <fragment
+        android:id="@+id/wordScreen"
+        android:name="uz.gita.dictionaryxp.presentation.ui.screen.WordScreen"
+        android:label="screen_word"
+        tools:layout="@layout/screen_word" >
+        <argument
+            android:name="english"
+            app:argType="string" />
+        <argument android:name="uzbek" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="fav"
+            app:argType="integer" />
+        <argument
+            android:name="note"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesScreen"
+        android:name="uz.gita.dictionaryxp.presentation.ui.screen.NotesScreen"
+        android:label="NotesScreen" >
+        <action
+            android:id="@+id/action_notesScreen_to_wordScreen"
+            app:destination="@id/wordScreen"
+            app:popUpTo="@id/dictionaryScreen"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="isEnglish"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutScreen"
+        android:name="uz.gita.dictionaryxp.presentation.ui.screen.AboutScreen"
+        android:label="AboutScreen" />
+</navigation>

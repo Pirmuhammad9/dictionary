@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="english">English</string>
+    <string name="countable">Countable</string>
+    <string name="english_">Uzbek English</string>
+    <string name="english_english">English English</string>
+    <string name="uzbek_english">Uzbek English</string>
+    <string name="exercises">Exercises</string>
+    <string name="rate_this_app">Rate this app</string>
+    <string name="share_this_app">Share this app</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="about_us">About us</string>
+    <string name="english_uzbek">English Uzbek</string>
+    <string name="english_english_">English English</string>
+    <string name="first_fragment">First Fragment</string>
+    <string name="details">Details</string>
+    <string name="exercises_">Exercises</string>
+    <string name="no_words_found">No words found</string>
+    <string name="this_dictionary_is_an_up_to_date_easy_reference_dictionary_ideal_for_learners_of_english_and_uzbek_of_all_ages_the_entries_cover_everyday_english_and_uzbek_words_and_phrases_so_you_can_be_sure_of_having_all_the_vocabulary_you_need">This Dictionary is an up-to-date, easy-reference dictionary, ideal for learners of English and Uzbek of all ages. The entries cover everyday English and Uzbek words and phrases so you can be sure of having all the vocabulary you need.</string>
+    <string name="contacts">Contacts</string>
+    <string name="gmail">Gmail</string>
+    <string name="telegram">Telegram</string>
+    <string name="facebook">Facebook</string>
+</resources>
